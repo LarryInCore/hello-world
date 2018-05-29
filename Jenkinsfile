@@ -1,6 +1,4 @@
-
 Jenkinsfile (Declarative Pipeline)
-
 pipeline {
     agent {
         docker { image 'larrybox:friendlyhello' }
@@ -13,5 +11,3 @@ pipeline {
         }
     }
 }
-
-
