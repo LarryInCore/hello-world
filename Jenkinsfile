@@ -3,7 +3,7 @@ Jenkinsfile (Declarative Pipeline)
 
 pipeline {
     agent {
-        docker { image 'friendlyhello' }
+        docker { image 'larrybox:friendlyhello' }
     }
     stages {
         stage('Test') {
