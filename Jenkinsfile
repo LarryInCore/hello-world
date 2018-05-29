@@ -1,8 +1,17 @@
-Jenkinsfile (Scripted Pipeline)
-node {
- stage {
-   steps {
-     sh "echo scripte syntax Jenkinsfile"
-   }
- }
+
+Jenkinsfile (Declarative Pipeline)
+
+pipeline {
+    agent {
+        docker { image 'friendlyhello' }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
+    }
 }
+
+
