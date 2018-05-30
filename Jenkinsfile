@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'larrybox:friendlyhello' }
+        docker { image 'friendlyhello' }
     }
     stages {
         stage('Test') {
