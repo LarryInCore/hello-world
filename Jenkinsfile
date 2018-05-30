@@ -1,6 +1,3 @@
-
-Jenkinsfile (Declarative Pipeline)
-
 pipeline {
     agent {
         docker { image 'friendlyhello' }
@@ -8,10 +5,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'uname -a'
             }
         }
     }
 }
-
-
